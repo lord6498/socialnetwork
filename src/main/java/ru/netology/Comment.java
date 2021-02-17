@@ -5,6 +5,8 @@ public class Comment {
     private boolean canPosting;
     private boolean canGroupPosting;
     private boolean lockComment;
+    private boolean canClose;
+    private boolean canOpen;
 
     public int getCount() {
         return count;
@@ -36,5 +38,21 @@ public class Comment {
 
     public void setLockComment(boolean lockComment) {
         this.lockComment = lockComment;
+    }
+
+    public boolean isCanClose() {
+        return canClose;
+    }
+
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
+    }
+
+    public boolean isCanOpen() {
+        return canOpen;
+    }
+
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
     }
 }
